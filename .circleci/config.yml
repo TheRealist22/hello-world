@@ -26,7 +26,9 @@ jobs:
                 at: my_workspace
 
             - run: |
-                if [[ $(cat my_workspace/echo-output) == "Trying out workspaces"]]; then echo "it worked!"; else echo "NOPE! its not working" exit 1
+                if [[ $(cat my_workspace/echo-output) == "Trying out workspaces" ]]; then echo "it worked!"; 
+                else echo "NOPE! its not working" 
+                exit 1
                 fi
 workflows:
     version: 2
